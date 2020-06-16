@@ -34,19 +34,24 @@ class Test
 	}
 	void in()
 	{
-		cout<<"cac hoc sinh co diem toan tren 8 la"<<endl;
+		
 		for(int i=0;i<n;i++)
 		{
 			if(b[i].diemtoan>8)
 			{
-				cout<<b[i].ten<<": "<<b[i].diemtoan<<endl;
+				cout<<b[i].ma<<"\t\t"<<b[i].ten<<"\t\t"<<b[i].diemtoan<<endl;
 			}
 		}
 	}	
 };
+void vekhung()
+{
+	cout<<"MaSV\t\tTen\t\tdiem"<<endl;
+}
 int main()
 {
 	Test t;
 	t.nhapthongtin();
+	vekhung();
 	t.in();
 }
